@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="williams sonoma, west elm, frontend, web development, javascript, jquery, css, html5">
+    <meta name="description" content="A mock merchandise page of Williams-Sonoma, West Elm's parent company">
+    <meta name="author" content="Junjie Chen">
+    <title>Williams-Sonoma</title>
+    <link rel="icon" type="image/x-icon" href="https://www.williams-sonoma.com/wsimgs/rk/images/i/201824/0007/images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img class="logo-image" src="assets/logo.png" alt="Logo">
+      </div>
+
+      <nav>
+        <ul class="navbar">
+          <li class="navbar-tab">
+            <a href="javascript:;">Cookware</a>
+          </li>
+          <li class="navbar-tab">
+            <a href="javascript:;">Cooks&apos; Tools</a>
+          </li>
+          <li class="navbar-tab">
+            <a href="javascript:;">Cutlery</a>
+          </li>
+          <li class="navbar-tab">
+            <a href="javascript:;">Electrics</a>
+          </li>
+          <li class="navbar-tab">
+            <a href="javascript:;">Bakeware</a>
+          </li>
+          <li class="navbar-tab">
+            <a href="javascript:;">Food</a>
+          </li>
+          <li class="navbar-tab">
+            <a href="javascript:;">Tabletop &amp; Bar</a>
+          </li>
+          <li class="navbar-tab">
+            <a href="javascript:;">Homekeeping</a>
+          </li>
+          <li class="navbar-tab">
+            <a href="javascript:;">Outdoor</a>
+          </li>
+          <li class="navbar-tab">
+            <a href="javascript:;">Sale</a>
+          </li>
+          <li class="navbar-tab">
+            <a href="javascript:;">Williams-Sonoma Home</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <ul class="breadcrumb">
+        <li class="breadcrumb-tab">
+          <a href="javascript:;">Home</a>
+        </li>
+        <li class="breadcrumb-tab">
+          <a href="javascript:;">Homekeeping</a>
+        </li>
+        <li class="breadcrumb-tab">
+          <a href="javascript:;">Aprons</a>
+        </li>
+        <li class="breadcrumb-tab">
+          <a href="javascript:;">Adult Aprons</a>
+        </li>
+        <li class="breadcrumb-tab">
+          <a href="javascript:;">Williams-Sonoma Classic Apron, French Blue</a>
+        </li>
+      </ul>
+
+      <div class="content">
+        <section class="images-container">
+          <div class="hero-image-wrapper">
+            <img class="hero-image" id="hero-image" src="assets/product-large-a.jpg" alt="Hero Image">
+          </div>
+
+          <div class="small-image-wrapper">
+            <a class="thumbnail-image active" href="javascript:;" data-thumbnail-image-url="assets/product-large-a.jpg">
+              <img class="small-image" src="assets/product-small-a.jpg" alt="Small Image A">
+            </a>
+            <a class="thumbnail-image" href="javascript:;" data-thumbnail-image-url="assets/product-large-b.jpg">
+              <img class="small-image" src="assets/product-small-b.jpg" alt="Small Image B">
+            </a>
+            <a class="thumbnail-image" href="javascript:;" data-thumbnail-image-url="assets/product-large-c.jpg">
+              <img class="small-image" src="assets/product-small-c.jpg" alt="Small Image C">
+            </a>
+            <a class="thumbnail-image" href="javascript:;" data-thumbnail-image-url="assets/product-large-d.jpg">
+              <img class="small-image" src="assets/product-small-d.jpg" alt="Small Image D">
+            </a>
+          </div>
+        </section>
+
+        <section class="details-container">
+          <section class="apron-summary">
+            <div class="apron-introduction">
+              <h1 class="apron-name">Williams Sonoma Classic Apron, French Blue</h1>
+
+              <p class="apron-description">A generously sized apron is a necessity in any kitchen, and ours will brighten yours with lively color. Sewn of thick cotton, it can be personalized or monogrammed with up to nine characters, all the same height, embroidered in your choice of color. An apron of this quality makes a welcome gift for any cook.</p>
+
+              <ul class="apron-characteristics">
+                <li class="apron-characteristic">Durable 100% cotton construction.</li>
+                <li class="apron-characteristic">Adjustable neckband ensures a good fit.</li>
+                <li class="apron-characteristic">Roomy front pockets hold small tools.</li>
+                <li class="apron-characteristic">Machine-wash.</li>
+              </ul>
+            </div>
+
+            <div class="price-container">
+              <div class="price-wrapper">
+                $<span class="price">19.95</span>
+              </div>
+
+              <div class="quantity-wrapper">
+                <input class="quantity" type="number" value="1">
+              </div>
+
+              <button class="add-to-cart-button" id="add-to-cart-button"></button>
+            </div>
+          </section>
+
+          <section class="apron-assortment">
+            <dl class="apron-list">
+              <dt class="apron-term active">Expanded</dt>
+              <dd class="term-description active">This section is expanded. This section can be collapsed by clicking on the "Expanded" text.</dd>
+              <dt class="apron-term">Collapsed</dt>
+              <dd class="term-description">This section is expanded. This section can be collapsed by clicking on the "Expanded" text.</dd>
+              <dt class="apron-term">Collapsed</dt>
+              <dd class="term-description">This section is expanded. This section can be collapsed by clicking on the "Expanded" text.</dd>
+            </dl>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer>&copy; Williams-Sonoma Inc., All Rights Reserved | Terms and Conditions | Privacy Policy | Legal Statement</footer>
+
+    <div class="cart" id="cart">
+      <div class="cart-content">
+        <span class="close-cart-button" id="close-cart-button">&times;</span>
+
+        <h3 class="cart-header">You've just added the following to your basket:</h3>
+
+        <div class="cart-body">
+          <section class="item-details">
+            <div class="item-image-wrapper">
+              <img class ="item-image" src="" alt="Item Image">
+            </div>
+
+            <div class="item-summary">
+              <h5 class="item-name"></h5>
+
+              <p>
+                Quantity:
+                <span class="item-quantity"></span>
+              </p>
+
+              <p>
+                Price:
+                <span class="item-price"></span>
+                each
+              </p>
+            </div>
+          </section>
+
+          <section class="cart-details">
+            <table class="cart-summary">
+              <thead>
+                <tr>
+                  <th>Basket Summary</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Total Items in Basket:</td>
+                  <td class="summary-quantity"></td>
+                </tr>
+                <tr>
+                  <td>Merchandise Subtotal:*</td>
+                  <td class="summary-price"></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <button class="express-checkout-button"></button>
+
+            <button class="checkout-button"></button>
+
+            <a class="continue-shopping-link" id="continue-shopping-link" href="javascript:;"></a>
+
+            <p class="checkout-notice">* Subtotal does not include shipping and processing, gift wrap, discounts or tax.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
